@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Diabetes Diagnosis</title>
+</head>  
+<body>
+    
+    <div class="main-page">
+        <div class="page-content">
+            <h2>Enter the Details for Diabetes Diagnosis</h2>
+    <form method="POST" action="/" enctype="multipart/form-data">
+         <input type="text" name="age" placeholder="Age">
+         <br>
+         <input type="text" name="fpg" placeholder="Fasting Plasma Glucose">
+         <br>
+         <input type="text" name="diabp" placeholder="Diastolic BP">
+         <br>      
+         <input type="text" name="sysbp" placeholder="Systolic BP">
+         <br>
+         <input type="text" name="bmi" placeholder="BMI">
+         <br>
+         <input type="text" name="avgsugar" placeholder="Average Blood Sugar">
+         <br>
+         <input type="text" name="wcir" placeholder="Waist Circumference">
+         <br>
+         <input type="text" name="hcir" placeholder="Hip Circumference">
+         <br>
+         <input type="text" name="chol" placeholder="Cholestrol">
+         <br>
+         <input type="text" name="ogtt" placeholder="OGTT">
+         <br>
+            
+         <input type="submit">
+    </form>
+
+    {% if result_out %}
+          <br>
+         <h2>Predicted Result :{{result_out['Result']}}</h2>
+
+    {% endif %}
+        </div>
+    </div>
+</body>  
+</html>
+
