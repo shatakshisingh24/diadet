@@ -1,4 +1,7 @@
-# Diabetes Detection
+# Diabetes Diagnosis
+
+### Live Application : [View](https://diadet.herokuapp.com/)
+
 A simple web application that predicts if a person is diabetic or not with the help of given input values:
 * Age
 * Fasting Plasma Glucose
